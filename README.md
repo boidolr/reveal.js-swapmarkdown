@@ -41,7 +41,7 @@ Different slide decks can be loaded by adding them to the URL of the presentatio
 
 ## Configuration
 
-You can customize loading with `slidesRoot` and `slidesRegEx` parameters of your configuration.
+You can customize loading with parameters in your configuration.
 
 ```javascript
 Reveal.initialize({
