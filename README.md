@@ -37,7 +37,7 @@ Setup your presentation for markdown slides as described in the reveal.js [docum
 </body>
 ```
 
-Different slide decks can be loaded by adding them to the URL of the presentation, ie [http://localhost:8000?slides=example.md](http://localhost:8000?slides=example.md) (for external markdown to work the [full setup](https://github.com/hakimel/reveal.js#full-setup) needs to be used).
+Different slide decks can be loaded by adding them to the URL of the presentation, ie [http://localhost:8000?slides=example](http://localhost:8000?slides=example) (for external markdown to work the [full setup](https://github.com/hakimel/reveal.js#full-setup) needs to be used).
 
 ## Configuration
 
