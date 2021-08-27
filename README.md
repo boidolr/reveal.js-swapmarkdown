@@ -8,29 +8,32 @@ Copy this repository into the plugins folder of your reveal.js presentation, ie 
 
 Add the plugin to the dependencies in your presentation before the markdown plugins, as below.
 
-```javascript
-Reveal.initialize({
-    // ...
-    dependencies: [
-        { src: 'plugin/swapmarkdown/swapmarkdown.js' },
+```html
+<script src="plugin/animate/plugin.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+
+<script>
+    Reveal.initialize({
         // ...
-        { src: 'plugin/markdown/marked.js' },
-        { src: 'plugin/markdown/markdown.js' },
+        plugins: [
+            RevealSwapMarkdown,
+            RevealMarkdown
+        ],
         // ...
-    ]
-});
+    });
+</script>
 ```
 
 ## Usage
 
-Setup your presentation for markdown slides as described in the reveal.js [documentation](https://github.com/hakimel/reveal.js#markdown):
+Setup your presentation for markdown slides as described in the reveal.js [documentation](https://revealjs.com/markdown/):
 
 ```html
 <body>
     <div class="reveal">
         <div class="slides">
-            <section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-separator-notes="^\n\[\["/>
-                External markdown will be loaded here.
+            <section data-markdown data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"/>
+                <!-- External markdown will be loaded here. -->
             </section>
         </div>
     </div>
